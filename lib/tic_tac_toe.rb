@@ -19,6 +19,7 @@ WIN_COMBINATIONS = [
 
 def display_board
     puts "#{@board[0]} | #{@board[1]} | #{@board[2]}"
+    binding.pry
     puts "---------"
     puts "#{@board[2]} | #{@board[4]} | #{@board[5]}"
     puts "---------"
