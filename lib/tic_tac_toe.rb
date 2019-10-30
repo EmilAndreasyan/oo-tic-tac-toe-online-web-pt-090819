@@ -3,7 +3,7 @@ class TicTacToe
 attr_accessor :board
 
 def initialize
-    @board = Array.new(9, " ")
+    @board = Array.new(9, " ") # creates an array of 9 items and sets it to "" empty string
 end
 
 WIN_COMBINATIONS = [
@@ -26,7 +26,7 @@ def display_board
 end
 
 def input_to_index(input)
-input.to_i - 1
+input.to_i - 1 # converts to integer and corresponds to exact location, array # is 0 based
 end
 
 def move(index, token = "X")
@@ -127,5 +127,9 @@ game.turn_count
 game.current_player
 game.won?
 game.draw?
+<<<<<<< HEAD
 game.winner
 game.play
+=======
+game.winner
+>>>>>>> 214f8111aff522d57621bcb19f0e4467c68ff119
